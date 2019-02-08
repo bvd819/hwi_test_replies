@@ -1,0 +1,45 @@
+html, body {
+    background-color: $website-background-color;
+}
+.container {
+    width: 95%;
+    margin: 5% auto 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .view {
+        width: 100%;
+        max-width: 900px;
+        min-height: 250px;
+        background-color: white;
+        border: 1px solid $border-color;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+        > div {
+            padding: 15px 30px;
+        }
+    }
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: $highlight-color;
+    color: white;
+    font-weight: bold;
+    transition: $default-transition-time;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+        background-color: lighten($highlight-color, 10%);
+    }
+}
+
+.divider {
+    width: 100%;
+    height: 2px;
+    background-color: $heading-color;
+    margin: 25px 0;
+}

@@ -1,0 +1,21 @@
+/* breakpoints */
+$breakpoints: (
+  'xs': (max-width: 479px),
+  'sm': (max-width: 767px),
+  'smplus': (min-width: 767px),
+  'md': (max-width: 991px),
+  'lg': (max-width: 1199px)
+);
+
+/* branding colors */
+$highlight-color: #699;
+$element-color: #484c55;
+$website-background-color: #f2f2f2;
+$border-color: #e4e4e4;
+
+
+
+$default-text-color: $element-color;
+$lighter-text-color: lighten($default-text-color, 20%);
+$heading-color: $highlight-color;
+$default-transition-time: 0.3s all ease;

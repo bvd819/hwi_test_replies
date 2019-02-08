@@ -1,0 +1,16 @@
+.user-profile-small {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .user-image {
+        // Normally I'd take the time to make sure the image is rendered in a way that aspect ratio is kept safe, but for demo purposes I'm skipping this step.
+        height: 125px;
+        width: 125px;
+        border-radius: 50%;
+        border: 2px solid $highlight-color;
+    }
+
+}

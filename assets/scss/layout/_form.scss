@@ -1,0 +1,27 @@
+
+.leave-reply-to-article {
+
+    form {
+
+        textarea {
+            display: block;
+            font-family: $default-font;
+            max-width: 100%;
+            width: 100%;
+            min-height: 250px;
+            background-color: darken($website-background-color, 10%);
+            border: none;
+            box-sizing: border-box;
+            padding: 15px;
+        }
+        input[type="submit"], button {
+            float: right;
+            margin: 5px 0;
+
+            &:after {
+                content: "";
+                clear: both;
+            }
+        }
+    }
+}

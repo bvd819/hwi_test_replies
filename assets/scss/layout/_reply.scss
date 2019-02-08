@@ -1,0 +1,80 @@
+.replies-wrapper {
+
+    .reply {
+        .reply-information {
+            span, b {
+                color: $lighter-text-color;
+                font-size: 12px;
+            }
+        }
+        .reply-score-wrapper {
+            display: flex;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+
+            > div {
+                margin: 0 2px;
+            }
+
+            .score {
+                background-color: $highlight-color;
+                padding: 5px 10px;
+                color: white;
+                font-weight: bold;
+                font-family: $default-font;
+            }
+            .subtract-from-score, .add-to-score {
+                @extend .score;
+                transition: $default-transition-time;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: lighten($highlight-color, 20%);
+                }
+            }
+
+        }
+        .initial {
+            display: flex;
+            position: relative;
+            border: 1px solid $border-color;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+            padding: 15px;
+
+            .user-profile-small {
+                border-right: 2px solid $border-color;
+            }
+            .reply-message {
+                width: calc(100% - 150px);
+                box-sizing: border-box;
+                padding: 15px;
+
+                .interaction-bar {
+                    position: absolute;
+                    bottom: 15px;
+                    right: 15px;
+                }
+            }
+        }
+        .children {
+            margin-left: 10%;
+
+            .reply {
+                position: relative;
+                border: 1px solid $border-color;
+                box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+                padding: 25px;
+                margin-top: 15px;
+
+                .reply-message {
+                    @extend .reply-message;
+                    width: calc(100% - 50px);
+                }
+            }
+        }
+    }
+    >.reply {
+        margin-bottom: 15px;
+    }
+}

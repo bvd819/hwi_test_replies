@@ -1,0 +1,185 @@
+/* Utils */
+/* breakpoints */
+/* Base */
+/* breakpoints */
+/* branding colors */
+/* using Lato font as default for everything */
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
+html, body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  color: #699;
+}
+
+h1:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin: 5px 0;
+  background-color: #699;
+}
+
+p, span, a, b, ul, li, input, textarea, .button {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #484c55;
+}
+
+/* Layout */
+html, body {
+  background-color: #f2f2f2;
+}
+
+.container {
+  width: 95%;
+  margin: 5% auto 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .view {
+  width: 100%;
+  max-width: 900px;
+  min-height: 250px;
+  background-color: white;
+  border: 1px solid #e4e4e4;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.container .view > div {
+  padding: 15px 30px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 25px;
+  background-color: #699;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s all ease;
+  text-decoration: none;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #85adad;
+}
+
+.divider {
+  width: 100%;
+  height: 2px;
+  background-color: #699;
+  margin: 25px 0;
+}
+
+.replies-wrapper .reply .reply-information span, .replies-wrapper .reply .reply-information b {
+  color: #777e8c;
+  font-size: 12px;
+}
+.replies-wrapper .reply .reply-score-wrapper {
+  display: flex;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.replies-wrapper .reply .reply-score-wrapper > div {
+  margin: 0 2px;
+}
+.replies-wrapper .reply .reply-score-wrapper .score, .replies-wrapper .reply .reply-score-wrapper .subtract-from-score, .replies-wrapper .reply .reply-score-wrapper .add-to-score {
+  background-color: #699;
+  padding: 5px 10px;
+  color: white;
+  font-weight: bold;
+  font-family: "Lato", sans-serif;
+}
+.replies-wrapper .reply .reply-score-wrapper .subtract-from-score, .replies-wrapper .reply .reply-score-wrapper .add-to-score {
+  transition: 0.3s all ease;
+  cursor: pointer;
+}
+.replies-wrapper .reply .reply-score-wrapper .subtract-from-score:hover, .replies-wrapper .reply .reply-score-wrapper .add-to-score:hover {
+  background-color: #a3c2c2;
+}
+.replies-wrapper .reply .initial {
+  display: flex;
+  position: relative;
+  border: 1px solid #e4e4e4;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  padding: 15px;
+}
+.replies-wrapper .reply .initial .user-profile-small {
+  border-right: 2px solid #e4e4e4;
+}
+.replies-wrapper .reply .initial .reply-message, .replies-wrapper .reply .initial .children .reply .reply-message, .replies-wrapper .reply .children .reply .initial .reply-message {
+  width: calc(100% - 150px);
+  box-sizing: border-box;
+  padding: 15px;
+}
+.replies-wrapper .reply .initial .reply-message .interaction-bar {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+.replies-wrapper .reply .children {
+  margin-left: 10%;
+}
+.replies-wrapper .reply .children .reply {
+  position: relative;
+  border: 1px solid #e4e4e4;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  padding: 25px;
+  margin-top: 15px;
+}
+.replies-wrapper .reply .children .reply .reply-message {
+  width: calc(100% - 50px);
+}
+.replies-wrapper > .reply {
+  margin-bottom: 15px;
+}
+
+.user-profile-small {
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.user-profile-small .user-image {
+  height: 125px;
+  width: 125px;
+  border-radius: 50%;
+  border: 2px solid #699;
+}
+
+.navigation-bar {
+  display: flex;
+}
+.navigation-bar .nav-back {
+  margin-left: auto;
+}
+
+.leave-reply-to-article form textarea {
+  display: block;
+  font-family: "Lato", sans-serif;
+  max-width: 100%;
+  width: 100%;
+  min-height: 250px;
+  background-color: #d9d9d9;
+  border: none;
+  box-sizing: border-box;
+  padding: 15px;
+}
+.leave-reply-to-article form input[type=submit], .leave-reply-to-article form button {
+  float: right;
+  margin: 5px 0;
+}
+.leave-reply-to-article form input[type=submit]:after, .leave-reply-to-article form button:after {
+  content: "";
+  clear: both;
+}
+
+/*# sourceMappingURL=stylesheet.css.map */
